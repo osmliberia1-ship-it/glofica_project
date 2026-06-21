@@ -1,0 +1,19 @@
+{
+  "name": "gfb-website",
+  "version": "1.0.0",
+  "description": "Global Financial Balance website",
+  "main": "server.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch",
+    "start": "node server.js",
+    "dev": "npm run build:css && node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

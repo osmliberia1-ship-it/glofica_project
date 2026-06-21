@@ -1,0 +1,41 @@
+<header class="sticky top-0 z-50 border-b border-white/10 bg-gfb-navy">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
+    <a href="/" class="flex items-center gap-3">
+      <div class="flex h-10 w-10 items-center justify-center rounded bg-gfb-gold font-bold text-gfb-navy-dark">GFB</div>
+      <span class="hidden text-sm font-semibold text-white sm:block">Global Financial Balance</span>
+    </a>
+
+    <nav class="hidden items-center gap-6 lg:flex">
+      <a href="/" class="text-sm font-medium transition <%= currentPath === '/' ? 'text-gfb-gold' : 'text-white/80 hover:text-white' %>">Home</a>
+      <a href="/services" class="text-sm font-medium transition <%= currentPath === '/services' ? 'text-gfb-gold' : 'text-white/80 hover:text-white' %>">Services</a>
+      <a href="/membership" class="text-sm font-medium transition <%= currentPath === '/membership' ? 'text-gfb-gold' : 'text-white/80 hover:text-white' %>">Membership</a>
+      <a href="/knowledge-events" class="text-sm font-medium transition <%= currentPath === '/knowledge-events' ? 'text-gfb-gold' : 'text-white/80 hover:text-white' %>">Knowledge & Events</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="/advisory" class="hidden rounded-md border border-gfb-gold/50 px-4 py-2 text-xs font-semibold text-gfb-gold transition hover:bg-gfb-gold/10 sm:inline-block">Request Advisory Support</a>
+      <a href="/login" class="rounded-md bg-gfb-gold px-4 py-2 text-xs font-semibold text-gfb-navy-dark transition hover:bg-gfb-gold-light">Member Login</a>
+      <button id="mobile-menu-btn" class="ml-2 text-white lg:hidden" aria-label="Open menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-white/10 bg-gfb-navy-light lg:hidden">
+    <nav class="flex flex-col gap-1 px-4 py-4">
+      <a href="/" class="rounded px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5 hover:text-white">Home</a>
+      <a href="/services" class="rounded px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5 hover:text-white">Services</a>
+      <a href="/membership" class="rounded px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5 hover:text-white">Membership</a>
+      <a href="/knowledge-events" class="rounded px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5 hover:text-white">Knowledge & Events</a>
+      <a href="/advisory" class="rounded px-3 py-2 text-sm font-medium text-gfb-gold hover:bg-white/5">Request Advisory Support</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+</script>
