@@ -1,36 +1,208 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<section class="bg-gfb-navy py-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gfb-navy">
   <div class="mx-auto max-w-7xl px-4 lg:px-8">
-    <h1 class="font-display text-4xl font-bold text-white md:text-5xl">Knowledge &amp; Events</h1>
-    <p class="mt-4 max-w-2xl text-lg text-white/70">
-      Research, reports, and policy dialogues advancing global financial integrity.
-    </p>
+    <div class="grid gap-8 py-16 md:grid-cols-2 md:py-20 lg:py-28">
+      <div class="flex flex-col justify-center">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-gfb-gold">Learning Hub</p>
+        <h1 class="font-display text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+          Knowledge & Events
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
+          Research, reports, and policy dialogues advancing global financial integrity. Connect with experts and join our community of practice.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#events" class="btn-primary">Browse Events</a>
+          <a href="/login" class="btn-outline">Sign Up for Access</a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/images/Annual Forum image 1.jpg" alt="Knowledge and Events" class="h-full w-full rounded-xl object-cover shadow-2xl">
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Featured Resources Section -->
 <section class="bg-gfb-cream py-20">
   <div class="mx-auto max-w-7xl px-4 lg:px-8">
-    <div class="grid gap-8 lg:grid-cols-3">
-      <div class="rounded-xl bg-white p-8 shadow-sm">
+    <h2 class="section-heading text-center">Knowledge Resources</h2>
+    <p class="section-subheading mx-auto text-center">
+      Access curated research and insights on financial integrity, IFFs, and policy transformation.
+    </p>
+    <div class="mt-14 grid gap-8 md:grid-cols-3">
+      <div class="rounded-xl bg-white p-8 shadow-sm transition hover:shadow-md">
         <span class="rounded bg-gfb-teal/10 px-3 py-1 text-xs font-semibold text-gfb-teal">Research</span>
-        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Selected Public Reports</h3>
-        <p class="mt-2 text-sm text-gfb-slate">Access curated research on IFFs, informality, and payment systems across regions.</p>
+        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Research Reports</h3>
+        <p class="mt-2 text-sm text-gfb-slate">Access comprehensive diagnostics on illicit financial flows, informal economies, and payment systems across countries and regions.</p>
+        <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Browse Reports →</a>
       </div>
-      <div class="rounded-xl bg-white p-8 shadow-sm">
+      <div class="rounded-xl bg-white p-8 shadow-sm transition hover:shadow-md">
         <span class="rounded bg-gfb-teal/10 px-3 py-1 text-xs font-semibold text-gfb-teal">Newsletter</span>
-        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Policy Newsletters</h3>
-        <p class="mt-2 text-sm text-gfb-slate">Regular updates on regulatory developments, case studies, and best practices.</p>
+        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Policy Updates</h3>
+        <p class="mt-2 text-sm text-gfb-slate">Regular updates on regulatory developments, policy case studies, implementation best practices, and global financial trends.</p>
+        <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Subscribe Now →</a>
       </div>
-      <div class="rounded-xl bg-white p-8 shadow-sm">
-        <span class="rounded bg-gfb-teal/10 px-3 py-1 text-xs font-semibold text-gfb-teal">Events</span>
-        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Public Webinars</h3>
-        <p class="mt-2 text-sm text-gfb-slate">Join exclusive policy dialogues and regional development programs.</p>
+      <div class="rounded-xl bg-white p-8 shadow-sm transition hover:shadow-md">
+        <span class="rounded bg-gfb-teal/10 px-3 py-1 text-xs font-semibold text-gfb-teal">Tools</span>
+        <h3 class="mt-4 text-lg font-bold text-gfb-navy">Data Tools</h3>
+        <p class="mt-2 text-sm text-gfb-slate">Proprietary monitoring dashboards and analytical tools for tracking financial flows, benchmarking progress, and policy impact.</p>
+        <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Learn More →</a>
       </div>
     </div>
-    <div class="mt-12 text-center">
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="bg-white py-20">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <h2 class="section-heading text-center">Upcoming Events</h2>
+    <p class="section-subheading mx-auto text-center">
+      Join our webinars, workshops, and policy dialogues connecting financial professionals globally.
+    </p>
+    
+    <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Event 1 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/capacity building image 1.png" alt="Capacity Building Workshop" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Workshop</span>
+            <span class="text-xs text-gfb-slate">March 15, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">Capacity Building: Formalizing the Informal Sector</h3>
+          <p class="mt-2 text-sm text-gfb-slate">Join experts from 12 countries as they discuss strategies for integrating informal businesses into formal economies.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/capacity building image 2.jpg" alt="IFF Prevention Strategies" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Webinar</span>
+            <span class="text-xs text-gfb-slate">March 22, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">IFF Prevention: Digital Solutions for Modern Threats</h3>
+          <p class="mt-2 text-sm text-gfb-slate">Explore cutting-edge digital technologies and policy frameworks for detecting and preventing illicit financial flows.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/capacity building image 3.jpg" alt="Regional Policy Dialogue" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Policy Dialogue</span>
+            <span class="text-xs text-gfb-slate">April 5, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">Regional Policy Dialogue: African Financial Systems</h3>
+          <p class="mt-2 text-sm text-gfb-slate">A platform for policymakers to share experiences, discuss regional challenges, and coordinate on financial integrity initiatives.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/programs_hero_image.jpg" alt="Payment Systems Forum" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Forum</span>
+            <span class="text-xs text-gfb-slate">April 18, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">Digital Payment Systems: Building Trust and Transparency</h3>
+          <p class="mt-2 text-sm text-gfb-slate">Central banks and fintech leaders discuss strategies for developing secure, transparent digital payment infrastructure.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/programs_pilot_image 2.jpg" alt="Implementation Workshop" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Workshop</span>
+            <span class="text-xs text-gfb-slate">April 25, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">From Strategy to Implementation: Best Practices Workshop</h3>
+          <p class="mt-2 text-sm text-gfb-slate">Learn practical strategies for implementing financial integrity reforms from countries that have successfully transformed their systems.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="overflow-hidden rounded-xl bg-white shadow-sm transition hover:shadow-md">
+        <img src="/images/programs_pilot_image 3.png" alt="Advanced Analytics" class="h-48 w-full object-cover">
+        <div class="p-6">
+          <div class="mb-2 flex items-center gap-2">
+            <span class="text-xs font-semibold text-gfb-teal uppercase">Masterclass</span>
+            <span class="text-xs text-gfb-slate">May 2, 2024</span>
+          </div>
+          <h3 class="text-lg font-bold text-gfb-navy">Advanced Analytics: Detecting Hidden Financial Flows</h3>
+          <p class="mt-2 text-sm text-gfb-slate">Deep-dive masterclass on using data analytics and AI to identify suspicious financial patterns and regulatory risks.</p>
+          <a href="#" class="inline-block mt-4 text-sm font-semibold text-gfb-teal hover:text-gfb-teal/80">Register →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Event/Program Section -->
+<section class="bg-gfb-navy py-20">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="grid gap-12 md:grid-cols-2">
+      <div class="flex items-center justify-center">
+        <img src="/images/program_pilot country_image.jpg" alt="Featured Program" class="w-full rounded-xl object-cover shadow-xl">
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-gfb-gold">Featured Program</p>
+        <h2 class="mt-2 text-3xl font-bold text-white md:text-4xl">
+          GFB Pilot Programs: From Learning to Impact
+        </h2>
+        <p class="mt-4 text-lg text-white/80">
+          Our pilot programs bring together governments, development partners, and GFB experts to implement comprehensive financial integrity reforms in real-world contexts.
+        </p>
+        <ul class="mt-8 space-y-4">
+          <li class="flex gap-3">
+            <svg class="h-6 w-6 shrink-0 text-gfb-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span class="text-white/90">Intensive multi-month implementation programs</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="h-6 w-6 shrink-0 text-gfb-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span class="text-white/90">On-site advisory support and capacity building</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="h-6 w-6 shrink-0 text-gfb-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span class="text-white/90">Peer learning across participating countries</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="h-6 w-6 shrink-0 text-gfb-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span class="text-white/90">Documented outcomes and best practices</span>
+          </li>
+        </ul>
+        <div class="mt-8 flex gap-4">
+          <a href="/advisory" class="btn-primary">Join a Pilot Program</a>
+          <a href="#" class="btn-outline">Learn from Past Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-white py-20">
+  <div class="mx-auto max-w-7xl px-4 text-center lg:px-8">
+    <h2 class="section-heading">Stay Updated on Events and Knowledge</h2>
+    <p class="section-subheading mx-auto">
+      Subscribe to our newsletter to receive updates on upcoming events, latest research, and policy insights.
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
       <a href="/login" class="btn-primary">Sign Up for Open Access</a>
+      <a href="/membership" class="btn-outline-dark">Explore Membership</a>
     </div>
   </div>
 </section>

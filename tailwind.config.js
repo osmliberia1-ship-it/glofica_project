@@ -5,15 +5,15 @@ module.exports = {
     extend: {
       colors: {
         gfb: {
-          navy: '#0B1F3A',
-          'navy-light': '#132D4F',
-          'navy-dark': '#071526',
-          gold: '#C9A227',
-          'gold-light': '#E3BC3F',
-          teal: '#1A7A7A',
-          'teal-light': '#249999',
+          navy: '#323128',
+          'navy-light': '#4b4840',
+          'navy-dark': '#1d1a17',
+          gold: '#3755C3',
+          'gold-light': '#637ee0',
+          teal: '#3755C3',
+          'teal-light': '#637ee0',
           slate: '#64748B',
-          cream: '#F8F6F1',
+          cream: '#ffffff',
         },
       },
       fontFamily: {
