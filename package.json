@@ -5,9 +5,11 @@
   "main": "server.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --minify",
+    "build:site": "node scripts/export.js",
+    "build": "npm run build:css && npm run build:site",
     "watch:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch",
     "start": "node server.js",
-    "dev": "npm run build:css && node server.js"
+    "dev": "npm run build && node server.js"
   },
   "dependencies": {
     "ejs": "^3.1.10",
